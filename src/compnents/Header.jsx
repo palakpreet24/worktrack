@@ -5,7 +5,7 @@ const Header = () => {
     <nav className="flex justify-between items-center px-6 py-4 bg-white shadow">
 
       {/* Logo */}
-      <div className="text-4xl font-bold">
+      <div className="text-5xl font-bold">
         <span className="text-black">Work</span>
         <span className="text-blue-500">Track</span>
       </div>
@@ -13,16 +13,16 @@ const Header = () => {
       {/* Navigation Links */}
       <div className="hidden md:flex space-x-12">
         <a href="#company" className="text-gray-600 hover:text-blue-500 text-lg no-underline">
-          Company
+          Home
         </a>
         <a href="#features" className="text-gray-600 hover:text-blue-500 text-lg no-underline">
-          Feature
+          About Us
         </a>
         <a href="#pricing" className="text-gray-600 hover:text-blue-500 text-lg no-underline">
-          Pricing
+          Contact
         </a>
         <a href="#login" className="text-gray-600 hover:text-blue-500 text-lg no-underline">
-          Log In
+          
         </a>
       </div>
 
