@@ -25,9 +25,7 @@ const Footer = () => {
           <ul className="space-y-2 pl-2">
             <li class>Features</li>
             <li>Pricing</li>
-            <li>Knowledge Base</li>
             <li>Documentation</li>
-            <li>Client's Feedback</li>
           </ul>
         </div>
 
@@ -38,8 +36,6 @@ const Footer = () => {
             <li>Blogs</li>
             <li>Careers</li>
             <li>Communities</li>
-            <li>Webinars</li>
-            <li>Videos</li>
           </ul>
         </div>
 
@@ -48,7 +44,7 @@ const Footer = () => {
           <h3 className="text-white font-semibold mb-3">Our Address</h3>
           <p className="mb-4">Bluetown India Pvt Ltd, L6-602,6th Floor,Iconic Tower,Sector-62,Noida,Uttar Pradesh</p>
           <div className="flex space-x-4">
-            <a href="#" className="text-gray-300 hover:text-white transition-colors-duration-200">
+            <a href="https://bluetown.com/" className="text-gray-300 hover:text-white transition-colors-duration-200">
               G
             </a>
             <a href="#" className="text-gray-300 hover:text-white transition-colors-duration-200">
@@ -57,7 +53,7 @@ const Footer = () => {
             <a href="#" className="text-gray-300 hover:text-white transition-colors-duration-200">
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="#" className="text-gray-300 hover:text-white transition-colors-duration-200">
+            <a href="https://www.linkedin.com/company/bluetown/" className="text-gray-300 hover:text-white transition-colors-duration-200">
               <i className="fab fa-linkedin"></i>
             </a>
           </div>

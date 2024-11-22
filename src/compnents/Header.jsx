@@ -1,36 +1,53 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <nav className="flex justify-between items-center px-6 py-4 bg-white shadow">
-
       {/* Logo */}
-      <div className="text-5xl font-bold">
-        <span className="text-black">Work</span>
-        <span className="text-blue-500">Track</span>
+      <div className="">
+        <Link to="/" className="no-underline">
+         <div className="text-black text-5xl font-bold">Work<span className="text-[#6C6EF5]">Track</span></div>
+         <div>
+         <span className="text-black ml-20">Simplifying field work</span>
+         </div>
+        </Link>
       </div>
-
+      
       {/* Navigation Links */}
       <div className="hidden md:flex space-x-12">
-        <a href="#company" className="text-gray-600 hover:text-blue-500 text-lg no-underline">
+        <Link
+          to="/"
+          className="text-gray-600 hover:text-blue-500 text-lg no-underline"
+        >
           Home
-        </a>
-        <a href="#features" className="text-gray-600 hover:text-blue-500 text-lg no-underline">
+        </Link>
+        <Link
+          to="/about"
+          className="text-gray-600 hover:text-blue-500 text-lg no-underline"
+        >
           About Us
-        </a>
-        <a href="#pricing" className="text-gray-600 hover:text-blue-500 text-lg no-underline">
+        </Link>
+        <Link
+          to="/contact"
+          className="text-gray-600 hover:text-blue-500 text-lg no-underline"
+        >
           Contact
-        </a>
-        <a href="#login" className="text-gray-600 hover:text-blue-500 text-lg no-underline">
-         Login 
-        </a>
+        </Link>
+        <Link
+          to="/login"
+          className="text-gray-600 hover:text-blue-500 text-lg no-underline"
+        >
+          Login
+        </Link>
       </div>
 
       {/* Sign Up Button */}
-      <button className="bg-blue-500 text-white text-lg px-4 py-2 rounded-lg hover:bg-blue-600">
-        Sign Up
-      </button>
-
+      <Link to="/signup">
+        <button className="bg-blue-500 text-white text-lg px-4 py-2 rounded-lg hover:bg-blue-600">
+          Sign Up
+        </button>
+      </Link>
     </nav>
   );
 };
