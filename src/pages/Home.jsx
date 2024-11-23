@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import image from "../assets/worktrack image.jpg";
 import image2 from "../assets/about-us.jpg";
 import image3 from "../assets/login image.jpg"
+import image4 from "../assets/contactus page.jpg"
 const Home = () => {
   return (
     <div>
@@ -113,45 +114,77 @@ We are driven by a passion for innovation and a commitment to helping you achiev
       {/* Contact Us Section */}
       <section
         id="contact"
-        className="flex items-center justify-center bg-[#b0b1fc] rounded-lg shadow-lg p-8 mx-64 my-12 mt-16"
+        className="h-screen w-screen bg-white flex pt-16"
       >
-        <div>
-        <h1 className="text-4xl font-bold text-center mb-6">Contact Us</h1>
-          <h2 className="text-2xl font-bold text-center mb-4 p-2">
-            We’d love to walk you through the platform
-          </h2>
-          <p className="text-center text-gray-600 mb-6">
-            Fill in the form and we’ll schedule a free demo!
-          </p>
+      
+      <div className="h-full w-6/12 bg-white flex flex-col items-center justify-center">
+        {/* Contact Form */}
+        <div className="w-full md:w-1/2 bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">Get in Touch</h2>
           <form>
-            <input
-              type="text"
-              placeholder="Enter Your Name"
-              className="w-full mb-4 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            />
-            <input
-              type="email"
-              placeholder="Enter Your Email Address"
-              className="w-full mb-4 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            />
-            <input
-              type="tel"
-              placeholder="Enter Your Phone Number"
-              className="w-full mb-4 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            />
-            <input
-              type="text"
-              placeholder="Enter Your City"
-              className="w-full mb-6 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-            />
+            <div className="mb-4">
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-gray-700"
+              >
+                Message
+              </label>
+              <textarea
+                id="message"
+                rows="4"
+                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition"
+              className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200"
             >
               Submit
             </button>
           </form>
+    </div>
+      </div>
+  
+        <div className="h-full w-6/12">
+          <img
+            className="h-full w-full object-cover"
+            src={image4}
+            alt="Work Progress"
+          />
         </div>
+      
       </section>
 
       {/* Login Section */}
