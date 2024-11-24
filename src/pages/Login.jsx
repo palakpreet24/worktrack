@@ -13,7 +13,7 @@ const Login = () => {
         id="Login"
         className="h-full w-full bg-white flex pt-16 bg-gradient-to-b from-white to-[#d2ddfc]"
       >
-        <div className="h-full w-6/12 bg-white flex flex-col items-center justify-center pb-24 bg-gradient-to-b from-white to-[#d2ddfc]">
+        <div className="h-full w-6/12 bg-white flex flex-col items-center justify-center pb-24 bg-gradient-to-b from-white to-[#d2ddfc] mt-24">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Welcome back</h1>
           <p className="text-gray-600 mb-6 text-xl">Please enter your details</p>
 
@@ -25,7 +25,7 @@ const Login = () => {
               <input
                 id="email"
                 type="email"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 mt-24"
                 placeholder="Enter your email"
               />
             </div>
@@ -56,7 +56,7 @@ const Login = () => {
              className='text-blue-500 mt-4 hover:underline cursor-pointer'> Create new account</Link>
             </div>
 
-        <div className="h-auto">
+        <div className="h-auto w-6/12">
           <img
             className="h-full w-auto max-w-full object-contain"
             src={loginImg}

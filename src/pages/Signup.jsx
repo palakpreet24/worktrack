@@ -8,9 +8,9 @@ const Signup = () => {
       <Header />
       <section
         id="signup"
-        className="h-full w-full bg-white flex pt-16 bg-gradient-to-b from-white to-[#d2ddfc]"
+        className="h-full w-full bg-white flex pt-16 bg-gradient-to-b from-white to-[#d2ddfc] "
       >
-        <div className="h-full w-6/12 bg-white flex flex-col items-center justify-center pb-24 bg-gradient-to-b from-white to-[#d2ddfc]">
+        <div className="h-full w-6/12 bg-white flex flex-col items-center justify-center pb-24 bg-gradient-to-b from-white to-[#d2ddfc] mt-24">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
             Create Your Account
           </h1>
@@ -119,9 +119,9 @@ const Signup = () => {
         </div>
 
         {/* Image Section */}
-        <div className="h-auto">
+        <div className="h-auto w-6/12">
           <img
-            className="h-full w-auto max-w-full object-contain"
+            className="h-full  max-w-full object-contain"
             src={loginImg}
             alt="Signup"
           />

@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section id="home" className="h-screen w-screen bg-white flex pt-16">
+      <section id="home" className="h-screen w-full bg-white flex pt-16">
         <div className="h-full w-6/12 bg-white flex flex-col items-center justify-center">
           <h1 className="text-5xl font-bold p-3">
             <div className="p-2 pb-0">
@@ -47,7 +47,7 @@ const Home = () => {
       {/* About Us Section */}
       <section
   id="about"
-  className="h-screen w-screen bg-gradient-to-b from-white to-[#d2ddfc] flex justify-between items-center px-16 py-12 gap-12 border-b-2"
+  className="h-screen w-full bg-gradient-to-b from-white to-[#d2ddfc] flex justify-between items-center px-16 py-12 gap-12 border-b-2"
 >
   {/* Text Section */}
   <div className="flex flex-col items-start justify-center w-6/12 space-y-6">
@@ -82,7 +82,7 @@ const Home = () => {
       {/* Contact Us Section */}
       <section
         id="contact"
-         className="h-screen w-screen flex pt-16 border-b-2 bg-gradient-to-b from-white to-[#d2ddfc]"
+         className="h-screen w-full flex pt-16 border-b-2 bg-gradient-to-b from-white to-[#d2ddfc]"
       >
       
       <div className="h-full w-6/12 bg-white flex flex-col items-center justify-center bg-gradient-to-b from-white to-[#d2ddfc]">
