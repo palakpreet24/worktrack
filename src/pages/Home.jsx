@@ -3,7 +3,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import image from "../assets/worktrack image.jpg";
 import image2 from "../assets/about-us.jpg";
-import image4 from "../assets/contactus_page-removebg-preview.png"
+import image4 from "../assets/contact-us.jpg"gu;
 import Header from "../compnents/Header";
 const Home = () => {
   const navigate = useNavigate();
