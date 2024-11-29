@@ -13,40 +13,38 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section
-        id="home"
-        className="h-screen w-full bg-white flex flex-wrap pt-16"
-      >
-        <div className="w-full md:w-6/12 flex flex-col items-center justify-center p-6">
-          <h1 className="text-3xl md:text-5xl font-bold text-center p-3">
-            <div className="p-2 pb-0">
-              Track your <span className="text-[#6C6EF5]">work progress</span>
-            </div>
-            <div className="p-2 pb-0">
-              <span className="text-[#6C6EF5]">Anywhere</span> Anytime!
-            </div>
-            <div className="p-2 pb-0">
-              Simplifying <span className="text-[#6C6EF5]">field</span> work
-            </div>
-          </h1>
-          <p className="text-base md:text-3xl text-gray-600 mb-6 text-center">
-            Elevate Your Workflow, Optimize Your Time.
-          </p>
-          <button
-            className="px-6 md:px-10 py-3 bg-[#FE978E] text-white rounded-full font-semibold text-lg md:text-2xl transition-all hover:bg-[#E1483E]"
-            onClick={handleStartClick}
-          >
-            Start
-          </button>
-        </div>
-        <div className="w-full md:w-6/12 h-60 md:h-full">
-          <img
-            className="w-full h-full object-cover"
-            src={image}
-            alt="Work Progress"
-          />
-        </div>
-      </section>
+      <section id="home" className="h-screen w-full bg-white flex flex-wrap pt-16">
+  <div className="h-auto w-full md:w-6/12 bg-white flex flex-col items-center justify-center px-6">
+    <h1 className="text-3xl md:text-5xl font-bold text-center p-3">
+      <div className="p-2 pb-0">
+        Track your <span className="text-[#6C6EF5]">work progress</span>
+      </div>
+      <div className="p-2 pb-0">
+        <span className="text-[#6C6EF5]">Anywhere</span> Anytime!
+      </div>
+      <div className="p-2 pb-0">
+        Simplifying <span className="text-[#6C6EF5]">field</span> work
+      </div>
+    </h1>
+    <p className="text-lg md:text-3xl text-gray-600 mb-6 text-center">
+      Elevate Your Workflow, Optimize Your Time.
+    </p>
+    <button
+      className="px-6 md:px-10 py-2 md:py-3 bg-[#FE978E] text-white rounded-full font-semibold text-lg md:text-2xl hover:bg-[#E1483E] transition-all"
+      onClick={handleStartClick}
+    >
+      Start
+    </button>
+  </div>
+  <div className="h-auto w-full md:w-6/12">
+    <img
+      className="w-full h-full object-cover md:object-fill"
+      src={image}
+      alt="Work Progress"
+    />
+  </div>
+</section>
+
 
       {/* About Us Section */}
       <section
