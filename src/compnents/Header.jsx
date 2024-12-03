@@ -42,7 +42,7 @@ const Header = () => {
       <div
         className={`${
           isMenuOpen ? "block" : "hidden"
-        } absolute md:static top-14 left-0 w-full md:w-auto md:bg-transparent z-10 shadow-md md:shadow-none md:flex md:space-x-12`}
+        } absolute md:static top-14 left-0 w-full md:w-auto bg-white md:bg-transparent z-10 shadow-md md:shadow-none md:flex md:space-x-12`}
       >
         <a
           href="/#home"
