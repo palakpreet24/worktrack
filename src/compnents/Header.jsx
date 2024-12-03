@@ -40,9 +40,12 @@ const Header = () => {
 
       {/* Navigation Links */}
       <div
+        // className={`${
+        //   isMenuOpen ? "block" : "hidden"
+        // } absolute md:static top-14 left-0 w-full md:w-auto bg-white md:bg-transparent z-10 shadow-md md:shadow-none md:flex md:space-x-12`}
         className={`${
-          isMenuOpen ? "block" : "hidden"
-        } absolute md:static top-14 left-0 w-full md:w-auto bg-white md:bg-transparent z-10 shadow-md md:shadow-none md:flex md:space-x-12`}
+          isMenuOpen ? "block absolute top-14 left-0 w-full bg-white shadow-md z-10" : "hidden"
+        } md:static md:block md:w-auto md:bg-transparent md:shadow-none md:flex md:space-x-12`}
       >
         <a
           href="/#home"
