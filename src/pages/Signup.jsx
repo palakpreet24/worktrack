@@ -8,19 +8,19 @@ const Signup = () => {
       <Header />
       <section
         id="signup"
-        className="h-full w-full bg-white flex pt-16 bg-gradient-to-b from-white to-[#d2ddfc] "
+        className="min-h-screen w-full flex flex-col-reverse lg:flex-row items-center justify-center bg-gradient-to-b from-white to-[#d2ddfc] pt-16"
       >
-        <div className="h-full w-6/12 bg-white flex flex-col items-center justify-center pb-24 bg-gradient-to-b from-white to-[#d2ddfc] mt-24">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">
+        {/* Signup Form Section */}
+        <div className="w-full lg:w-6/12 flex flex-col items-center justify-center py-8 px-4 lg:py-24 lg:px-12">
+          <h1 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-4 text-center lg:text-left">
             Create Your Account
           </h1>
-          <p className="text-gray-600 mb-6 text-xl">
+          <p className="text-gray-600 mb-6 text-lg lg:text-xl text-center lg:text-left">
             Fill in the details to get started!
           </p>
-
-          <form className="w-3/4 space-y-4">
+          <form className="w-full max-w-md space-y-4">
             {/* Full Name */}
-            <div className="mb-4">
+            <div>
               <label className="block text-gray-700 mb-2" htmlFor="fullName">
                 Full Name
               </label>
@@ -34,7 +34,7 @@ const Signup = () => {
             </div>
 
             {/* Email Address */}
-            <div className="mb-4">
+            <div>
               <label className="block text-gray-700 mb-2" htmlFor="email">
                 Email Address
               </label>
@@ -48,7 +48,7 @@ const Signup = () => {
             </div>
 
             {/* Phone Number */}
-            <div className="mb-4">
+            <div>
               <label className="block text-gray-700 mb-2" htmlFor="phone">
                 Phone Number
               </label>
@@ -62,7 +62,7 @@ const Signup = () => {
             </div>
 
             {/* Password */}
-            <div className="mb-4">
+            <div>
               <label className="block text-gray-700 mb-2" htmlFor="password">
                 Password
               </label>
@@ -76,7 +76,7 @@ const Signup = () => {
             </div>
 
             {/* Confirm Password */}
-            <div className="mb-4">
+            <div>
               <label
                 className="block text-gray-700 mb-2"
                 htmlFor="confirmPassword"
@@ -93,7 +93,7 @@ const Signup = () => {
             </div>
 
             {/* Terms and Conditions */}
-            <div className="flex items-center mb-4">
+            <div className="flex items-center">
               <input
                 id="terms"
                 type="checkbox"
@@ -119,9 +119,9 @@ const Signup = () => {
         </div>
 
         {/* Image Section */}
-        <div className="h-auto w-6/12">
+        <div className="w-full lg:w-6/12 flex items-center justify-center">
           <img
-            className="h-full  max-w-full object-contain"
+            className="w-full max-w-lg object-contain lg:h-screen"
             src={loginImg}
             alt="Signup"
           />
