@@ -4,10 +4,11 @@ import image from "../assets/worktrack image.jpg";
 import image2 from "../assets/about-us.jpg";
 import image4 from "../assets/contact-us.jpg";
 
+
 const Home = () => {
   const navigate = useNavigate();
   const handleStartClick = () => {
-    navigate("/Login");
+    navigate("/Dashboard");
   };
 
   return (
