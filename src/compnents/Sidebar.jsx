@@ -2,11 +2,8 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <div className="w-64 h-screen bg-blue-900 text-white flex flex-col transition-all duration-300">
-      {/* Logo Section */}
-      <div className="p-4 text-lg font-bold border-b border-blue-700">
-      </div>
-
+    <div className="w-64 h-screen bg-blue-900 text-white flex flex-col transition-all duration-300 mt-12">
+        
       {/* Menu Items */}
       <ul className="flex-1 mt-4 space-y-4 px-4">
         <li className="hover:text-blue-300 cursor-pointer">Dashboard</li>
