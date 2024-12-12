@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from '../compnents/Sidebar';
 import Card from '../compnents/Card';
+import Welcome from '../compnents/Welcome';
 
 export default function Dashboard() {
   return (
@@ -8,11 +9,17 @@ export default function Dashboard() {
       {/* Sidebar - On the left side */}
       <Sidebar />
 
-      {/* Main Content - Cards on the right side */}
-      <div className="flex-1 p-6 mt-20">
-        {/* <h1 className="text-2xl font-bold mb-6">Dashboard</h1> */}
-        <Card /> {/* Display the Card component here */}
+       {/* Welcome Section */}
+       <div className="flex-1 flex flex-col">
+        <div className="mt-20 px-6">
+          <Welcome />
+        </div>
+
+      {/* Cards on the right side */}
+      <div className="flex-1 p-6 mt-4">
+        <Card /> 
       </div>
+    </div>
     </div>
   );
 }
