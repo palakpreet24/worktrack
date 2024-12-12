@@ -2,13 +2,13 @@ import React from 'react';
 
 export default function Card() {
   const cardColors = [
-    { bg: "bg-blue-300", title: "text-blue-800" },  
-    { bg: "bg-green-300", title: "text-green-800" }, 
-    { bg: "bg-red-300", title: "text-red-800" }, 
-    { bg: "bg-yellow-300", title: "text-yellow-800" },
-    { bg: "bg-purple-300", title: "text-purple-800" }, 
-    { bg: "bg-pink-300", title: "text-pink-800" }, 
-    { bg: "bg-teal-300", title: "text-teal-800" }, 
+    { bg: "bg-blue-100", title: "text-blue-800" },  
+    { bg: "bg-orange-100", title: "text-orange-800" }, 
+    { bg: "bg-red-100", title: "text-red-800" }, 
+    { bg: "bg-green-100", title: "text-green-800" },
+    { bg: "bg-purple-100", title: "text-purple-800" }, 
+    { bg: "bg-teal-100", title: "text-teal-800" }, 
+    { bg: "bg-pink-100", title: "text-pink-800" }, 
   ];
 
   return (
