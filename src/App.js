@@ -6,7 +6,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Footer from './compnents/Footer';
 import Dashboard from "./pages/Dashboard";
-
+import Camera from './compnents/Camera';
 function App() {
   return (
     <Router>
@@ -17,6 +17,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/camera" element={<Camera />}/>
       </Routes>
       <Footer></Footer>
     </div>
