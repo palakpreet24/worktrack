@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { CameraIcon } from "@heroicons/react/24/solid";
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -82,15 +84,25 @@ const Header = () => {
         >
           Contact Us
         </a>
-        <Link to="/login" className="block md:inline-block" style={{ textDecoration: "none" }}>
+        <Link
+          to="/login"
+          className="block md:inline-block"
+          style={{ textDecoration: "none" }}
+        >
           <div className="text-gray-600 hover:text-blue-500 text-lg no-underline px-4 py-2">
             Login
           </div>
         </Link>
       </div>
 
+      <div className="hidden md:block">
+        <Link to="/camera">
+          <CameraIcon className="w-8 h-8 text-gray-600 hover:text-blue-500" />
+        </Link>
+      </div>
+
       {/* Sign Up Button */}
-      <div className="hidden md:block" >
+      <div className="hidden md:block">
         <Link to="/signup">
           <button className="bg-blue-500 text-white text-lg px-4 py-2 rounded-lg hover:bg-blue-600">
             Sign Up
