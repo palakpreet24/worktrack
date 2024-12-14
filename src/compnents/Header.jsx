@@ -44,7 +44,9 @@ const Header = () => {
         //   isMenuOpen ? "block" : "hidden"
         // } absolute md:static top-14 left-0 w-full md:w-auto bg-white md:bg-transparent z-10 shadow-md md:shadow-none md:flex md:space-x-12`}
         className={`${
-          isMenuOpen ? "block absolute top-14 left-0 w-full bg-white shadow-md z-10" : "hidden"
+          isMenuOpen
+            ? "block absolute top-14 left-0 w-full bg-white shadow-md z-10"
+            : "hidden"
         } md:static md:block md:w-auto md:bg-transparent md:shadow-none md:flex md:space-x-12`}
       >
         <a
@@ -53,6 +55,21 @@ const Header = () => {
         >
           Home
         </a>
+        {/* <Link to="/dashboard" className="block md:inline-block no underline">
+          <div className="text-gray-600 hover:text-blue-500 text-lg px-4 py-2">
+            Dashboard
+          </div>
+        </Link> */}
+        <Link
+          to="/dashboard"
+          className="block md:inline-block"
+          style={{ textDecoration: "none" }}
+        >
+          <div className="text-gray-600 hover:text-blue-500 text-lg px-4 py-2">
+            Dashboard
+          </div>
+        </Link>
+
         <a
           href="/#about"
           className="block md:inline-block text-gray-600 hover:text-blue-500 text-lg no-underline px-4 py-2"
@@ -65,7 +82,7 @@ const Header = () => {
         >
           Contact Us
         </a>
-        <Link to="/login" className="block md:inline-block">
+        <Link to="/login" className="block md:inline-block" style={{ textDecoration: "none" }}>
           <div className="text-gray-600 hover:text-blue-500 text-lg no-underline px-4 py-2">
             Login
           </div>
@@ -73,7 +90,7 @@ const Header = () => {
       </div>
 
       {/* Sign Up Button */}
-      <div className="hidden md:block">
+      <div className="hidden md:block" >
         <Link to="/signup">
           <button className="bg-blue-500 text-white text-lg px-4 py-2 rounded-lg hover:bg-blue-600">
             Sign Up
