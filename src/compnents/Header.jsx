@@ -53,7 +53,7 @@ const Header = () => {
       >
         <a
           href="/#home"
-          className="block md:inline-block text-gray-600 hover:text-blue-500 text-lg no-underline px-4 py-2"
+          className="block md:inline-block text-gray-600 hover:text-blue-500 text-lg no-underline px-4 py-2 font-bold"
         >
           Home
         </a>
@@ -64,7 +64,7 @@ const Header = () => {
         </Link> */}
         <Link
           to="/dashboard"
-          className="block md:inline-block"
+          className="block md:inline-block font-bold"
           style={{ textDecoration: "none" }}
         >
           <div className="text-gray-600 hover:text-blue-500 text-lg px-4 py-2">
@@ -74,19 +74,19 @@ const Header = () => {
 
         <a
           href="/#about"
-          className="block md:inline-block text-gray-600 hover:text-blue-500 text-lg no-underline px-4 py-2"
+          className="block md:inline-block text-gray-600 hover:text-blue-500 text-lg no-underline px-4 py-2 font-bold"
         >
           About Us
         </a>
         <a
           href="/#contact"
-          className="block md:inline-block text-gray-600 hover:text-blue-500 text-lg no-underline px-4 py-2"
+          className="block md:inline-block text-gray-600 hover:text-blue-500 text-lg no-underline px-4 py-2 font-bold"
         >
           Contact Us
         </a>
         <Link
           to="/login"
-          className="block md:inline-block"
+          className="block md:inline-block font-bold"
           style={{ textDecoration: "none" }}
         >
           <div className="text-gray-600 hover:text-blue-500 text-lg no-underline px-4 py-2">

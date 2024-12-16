@@ -7,8 +7,8 @@ export default function Welcome() {
         <h1 className="text-2xl font-bold text-purple-900">Hello Palak👋</h1>
         <p className="text-sm text-purple-700">You can manage your things from here</p>
       </div>
-      <div className="mr-8 text-purple-900 text-6xl font-extrabold">
-      <span className="font-serif italic">Welcome</span>
+      <div className="mr-12 text-purple-900 text-6xl font-extrabold">
+      <span className="font-serif ">Welcome</span>
       </div>
     </div>
   );
