@@ -67,9 +67,9 @@ const Header = () => {
           className="block md:inline-block font-bold"
           style={{ textDecoration: "none" }}
         >
-          <div className="text-gray-600 hover:text-blue-500 text-lg px-4 py-2">
+          {/* <div className="text-gray-600 hover:text-blue-500 text-lg px-4 py-2">
             Dashboard
-          </div>
+          </div> */}
         </Link>
 
         <a
@@ -94,12 +94,12 @@ const Header = () => {
           </div>
         </Link>
       </div>
-
+{/* 
       <div className="hidden md:block">
         <Link to="/camera">
           <CameraIcon className="w-8 h-8 text-gray-600 hover:text-blue-500" />
         </Link>
-      </div>
+      </div> */}
 
       {/* Sign Up Button */}
       <div className="hidden md:block">

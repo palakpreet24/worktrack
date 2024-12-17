@@ -20,6 +20,7 @@ const Login = () => {
           <p className="text-gray-600 mb-6 text-lg lg:text-xl text-center lg:text-left">
             Please enter your details
           </p>
+          {/* Login Form */}
           <form className="w-full max-w-md">
             <div className="mb-4">
               <label className="block text-gray-700 mb-2" htmlFor="email">
@@ -44,20 +45,26 @@ const Login = () => {
               />
             </div>
             <div className="flex items-center justify-between mb-4">
-              <a
-                href="#"
-                className="text-indigo-500 text-sm hover:underline"
-              >
+              <a href="#" className="text-indigo-500 text-sm hover:underline">
                 Forgot password
               </a>
             </div>
-            <button
-              type="submit"
-              className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition"
-            >
-              Login
-            </button>
           </form>
+          {/* Admin and User Login Buttons */}
+          <div className="w-full flex flex-col gap-4 max-w-md">
+            <Link
+              to="/AdminDashboard"
+              className="w-full bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-600 transition text-center"
+            >
+              Login as Admin
+            </Link>
+            <Link
+              to="/UserDashboard"
+              className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition text-center"
+            >
+              Login as User
+            </Link>
+          </div>
           <Link
             to="/Signup"
             className="text-blue-500 mt-4 hover:underline cursor-pointer"
