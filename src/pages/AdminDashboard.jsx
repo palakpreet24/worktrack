@@ -22,15 +22,15 @@ const AdminDashboard = () => {
         {/* Top Cards */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <p className="text-gray-600">Total Users</p>
+            <p className="text-gray-600">Total Absent</p>
             <h3 className="text-3xl font-bold">256</h3>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <p className="text-gray-600">New Users</p>
+            <p className="text-gray-600">Total Present</p>
             <h3 className="text-3xl font-bold">15</h3>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <p className="text-gray-600">Top Users</p>
+            <p className="text-gray-600">Total Users</p>
             <h3 className="text-3xl font-bold">90+</h3>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
@@ -49,7 +49,7 @@ const AdminDashboard = () => {
                 <th className="p-3">Email</th>
                 <th className="p-3">Phone</th>
                 <th className="p-3">Location</th>
-                <th className="p-3">Company</th>
+                {/* <th className="p-3">Company</th> */}
                 <th className="p-3">Status</th>
               </tr>
             </thead>
@@ -60,7 +60,7 @@ const AdminDashboard = () => {
                   <td className="p-3">{user.email}</td>
                   <td className="p-3">{user.phone}</td>
                   <td className="p-3">{user.location}</td>
-                  <td className="p-3">{user.company}</td>
+                  {/* <td className="p-3">{user.company}</td> */}
                   <td className="p-3">
                     <span
                       className={`px-3 py-1 rounded-full text-sm ${
