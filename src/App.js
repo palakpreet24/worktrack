@@ -8,6 +8,7 @@ import Footer from './compnents/Footer';
 import Dashboard from "./pages/Dashboard";
 import Camera from './compnents/Camera';
 import DashboardComponents from "./pages/DashboardComponents"
+import AdminDashboard from './pages/AdminDashboard';
 function App() {
   return (
     <Router>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="/camera" element={<Camera />}/>
         <Route path="/DashboardComponents" element={<DashboardComponents />} />
+        <Route path="/AdminDashboard" element={<AdminDashboard />} />
       </Routes>
       <Footer></Footer>
     </div>

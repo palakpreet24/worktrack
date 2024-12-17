@@ -8,7 +8,7 @@ import image4 from "../assets/contact-us.jpg";
 const Home = () => {
   const navigate = useNavigate();
   const handleStartClick = () => {
-    navigate("/Dashboard");
+    navigate("/AdminDashboard");
   };
 
   return (
