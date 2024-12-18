@@ -1,13 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Sidebar from "../compnents/Sidebar";
 
 const AdminDashboard = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
-
   const users = [
     { name: "John Carter", email: "john@example.com", phone: "234-567-1234", location: "United States", company: "Google", status: "Online" },
     { name: "Beatrix Moore", email: "beatrix@example.com", phone: "340-456-4287", location: "United Kingdom", company: "WebFlow", status: "Offline" },
@@ -20,46 +14,8 @@ const AdminDashboard = () => {
 
   return (
     <div className="flex flex-col lg:flex-row min-h-screen bg-gray-100 text-gray-900">
-      {/* Hamburger Button */}
-      <div className="p-4 lg:hidden">
-        <button
-          onClick={toggleSidebar}
-          className="text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-600"
-        >
-          {/* Hamburger Icon */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            />
-          </svg>
-        </button>
-      </div>
-
       {/* Sidebar */}
-      <div
-        className={`fixed inset-y-0 left-0 z-30 w-64 bg-white shadow-md transform transition-transform duration-300 lg:relative lg:translate-x-0 ${
-          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-        }`}
-      >
-        <Sidebar />
-      </div>
-
-      {/* Overlay */}
-      {isSidebarOpen && (
-        <div
-          className="fixed inset-0 z-20 bg-black/50 lg:hidden"
-          onClick={toggleSidebar}
-        ></div>
-      )}
+      <Sidebar />
 
       {/* Main Content */}
       <div className="flex-1 p-4 lg:p-6">
