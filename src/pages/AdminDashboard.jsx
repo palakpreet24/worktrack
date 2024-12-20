@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Sidebar from "../compnents/Sidebar";
+import UserHeader from "../compnents/UserHeader"; // Ensure this component is imported correctly
 
 const AdminDashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -19,106 +20,111 @@ const AdminDashboard = () => {
   ];
 
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen bg-gray-100 text-gray-900">
-      {/* Hamburger Button */}
-      <div className="p-4 lg:hidden">
-        <button
-          onClick={toggleSidebar}
-          className="text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-600"
-        >
-          {/* Hamburger Icon */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+    <div>
+      {/* User Header */}
+      <UserHeader />
+
+      <div className="flex flex-col lg:flex-row min-h-screen bg-gray-100 text-gray-900 mt-20">
+        {/* Hamburger Button */}
+        <div className="p-4 lg:hidden">
+          <button
+            onClick={toggleSidebar}
+            className="text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-600"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            />
-          </svg>
-        </button>
-      </div>
-
-      {/* Sidebar */}
-      <div
-        className={`fixed inset-y-0 left-0 z-30 w-64 bg-white shadow-md transform transition-transform duration-300 lg:relative lg:translate-x-0 ${
-          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-        }`}
-      >
-        <Sidebar />
-      </div>
-
-      {/* Overlay */}
-      {isSidebarOpen && (
-        <div
-          className="fixed inset-0 z-20 bg-black/50 lg:hidden"
-          onClick={toggleSidebar}
-        ></div>
-      )}
-
-      {/* Main Content */}
-      <div className="flex-1 p-4 lg:p-6">
-        {/* Top Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-          <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
-            <p className="text-gray-600">Total Absent</p>
-            <h3 className="text-2xl sm:text-3xl font-bold">256</h3>
-          </div>
-          <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
-            <p className="text-gray-600">Total Present</p>
-            <h3 className="text-2xl sm:text-3xl font-bold">15</h3>
-          </div>
-          <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
-            <p className="text-gray-600">Total Users</p>
-            <h3 className="text-2xl sm:text-3xl font-bold">90+</h3>
-          </div>
-          <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
-            <p className="text-gray-600">Other Users</p>
-            <h3 className="text-2xl sm:text-3xl font-bold">55</h3>
-          </div>
+            {/* Hamburger Icon */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
         </div>
 
-        {/* User Table */}
-        <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
-          <h2 className="text-lg sm:text-xl font-semibold mb-4">All Users</h2>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse border border-gray-200">
-              <thead>
-                <tr className="text-left text-gray-600 border-b">
-                  <th className="p-3 text-sm sm:text-base">Name</th>
-                  <th className="p-3 text-sm sm:text-base">Email</th>
-                  <th className="p-3 text-sm sm:text-base">Phone</th>
-                  <th className="p-3 text-sm sm:text-base">Location</th>
-                  <th className="p-3 text-sm sm:text-base">Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                {users.map((user, index) => (
-                  <tr key={index} className="hover:bg-gray-50">
-                    <td className="p-3 text-sm">{user.name}</td>
-                    <td className="p-3 text-sm">{user.email}</td>
-                    <td className="p-3 text-sm">{user.phone}</td>
-                    <td className="p-3 text-sm">{user.location}</td>
-                    <td className="p-3">
-                      <span
-                        className={`px-3 py-1 rounded-full text-sm ${
-                          user.status === "Online"
-                            ? "bg-green-100 text-green-700"
-                            : "bg-gray-200 text-gray-700"
-                        }`}
-                      >
-                        {user.status}
-                      </span>
-                    </td>
+        {/* Sidebar */}
+        <div
+          className={`fixed inset-y-0 left-0 z-30 w-64 bg-white shadow-md transform transition-transform duration-300 lg:relative lg:translate-x-0 ${
+            isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
+        >
+          <Sidebar />
+        </div>
+
+        {/* Overlay */}
+        {isSidebarOpen && (
+          <div
+            className="fixed inset-0 z-20 bg-black/50 lg:hidden"
+            onClick={toggleSidebar}
+          ></div>
+        )}
+
+        {/* Main Content */}
+        <div className="flex-1 p-4 lg:p-6">
+          {/* Top Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
+              <p className="text-gray-600">Total Absent</p>
+              <h3 className="text-2xl sm:text-3xl font-bold">256</h3>
+            </div>
+            <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
+              <p className="text-gray-600">Total Present</p>
+              <h3 className="text-2xl sm:text-3xl font-bold">15</h3>
+            </div>
+            <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
+              <p className="text-gray-600">Total Users</p>
+              <h3 className="text-2xl sm:text-3xl font-bold">90+</h3>
+            </div>
+            <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
+              <p className="text-gray-600">Other Users</p>
+              <h3 className="text-2xl sm:text-3xl font-bold">55</h3>
+            </div>
+          </div>
+
+          {/* User Table */}
+          <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
+            <h2 className="text-lg sm:text-xl font-semibold mb-4">All Users</h2>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse border border-gray-200">
+                <thead>
+                  <tr className="text-left text-gray-600 border-b">
+                    <th className="p-3 text-sm sm:text-base">Name</th>
+                    <th className="p-3 text-sm sm:text-base">Email</th>
+                    <th className="p-3 text-sm sm:text-base">Phone</th>
+                    <th className="p-3 text-sm sm:text-base">Location</th>
+                    <th className="p-3 text-sm sm:text-base">Status</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {users.map((user, index) => (
+                    <tr key={index} className="hover:bg-gray-50">
+                      <td className="p-3 text-sm">{user.name}</td>
+                      <td className="p-3 text-sm">{user.email}</td>
+                      <td className="p-3 text-sm">{user.phone}</td>
+                      <td className="p-3 text-sm">{user.location}</td>
+                      <td className="p-3">
+                        <span
+                          className={`px-3 py-1 rounded-full text-sm ${
+                            user.status === "Online"
+                              ? "bg-green-100 text-green-700"
+                              : "bg-gray-200 text-gray-700"
+                          }`}
+                        >
+                          {user.status}
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>

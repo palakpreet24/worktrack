@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import image from "../assets/worktrack image.jpg";
 import image2 from "../assets/about-us.jpg";
 import image4 from "../assets/contact-us.jpg";
+import Header from "../compnents/Header";
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
 
   return (
     <div>
+      <Header />
       {/* Hero Section */}
       <section id="home" className="h-screen w-full bg-white flex flex-col md:flex-row pt-16">
         <div className="h-full w-full md:w-6/12 bg-white flex flex-col items-center justify-center p-4">

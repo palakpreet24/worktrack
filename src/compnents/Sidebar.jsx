@@ -2,7 +2,8 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <div className="w-64 min-h-screen bg-[#6C6EF5] text-white font-bold flex flex-col transition-all duration-300 mt-14">
+    // <div className="w-64 min-h-screen bg-[#6C6EF5] text-white font-bold flex flex-col transition-all duration-300  h-full">
+    <div className="w-64 min-h-screen bg-[#6C6EF5] text-white font-bold flex flex-col transition-all duration-300 h-full mt-14 sm:mt-0">
         <div className="flex flex-col justify-between h-full">
       {/* Menu Items */}
       <ul className="mt-4 space-y-4 px-4">

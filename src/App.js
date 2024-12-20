@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Footer from './compnents/Footer';
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/UserDashboard";
 import Camera from './compnents/Camera';
 import DashboardComponents from "./pages/DashboardComponents"
 import AdminDashboard from './pages/AdminDashboard';
@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
     <div className="App">
-     <Header></Header> 
+     {/* <Header></Header>  */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
