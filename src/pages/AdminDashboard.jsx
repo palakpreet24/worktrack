@@ -22,7 +22,7 @@ const AdminDashboard = () => {
   return (
     <div>
       {/* User Header */}
-      <UserHeader />
+      <Header />
 
       <div className="flex flex-col lg:flex-row min-h-screen bg-gray-100 text-gray-900 mt-20">
         {/* Hamburger Button */}
