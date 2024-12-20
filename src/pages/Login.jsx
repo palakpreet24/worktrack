@@ -59,7 +59,7 @@ const Login = () => {
               Login as Admin
             </Link>
             <Link
-              to="/UserDashboard"
+              to="/Dashboard"
               className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition text-center"
             >
               Login as User
@@ -87,3 +87,7 @@ const Login = () => {
 };
 
 export default Login;
+
+
+
+
