@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Sidebar from "../compnents/Sidebar";
 import Header from "../compnents/Header";
+import AdminSidebar from "../compnents/AdminSidebar";
 
 const AdminDashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -55,7 +55,7 @@ const AdminDashboard = () => {
             isSidebarOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
-          <Sidebar />
+          <AdminSidebar />
         </div>
 
         {/* Overlay */}
@@ -79,8 +79,8 @@ const AdminDashboard = () => {
               <h3 className="text-2xl sm:text-3xl font-bold">15</h3>
             </div>
             <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
-              <p className="text-gray-600">Total Users</p>
-              <h3 className="text-2xl sm:text-3xl font-bold">90+</h3>
+              <p className="text-gray-600">Total Employees</p>
+              <h3 className="text-2xl sm:text-3xl font-bold">271</h3>
             </div>
             <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
               <p className="text-gray-600">Other Users</p>
@@ -90,7 +90,7 @@ const AdminDashboard = () => {
 
           {/* User Table */}
           <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
-            <h2 className="text-lg sm:text-xl font-semibold mb-4">All Users</h2>
+            <h2 className="text-lg sm:text-xl font-semibold mb-4">All Employees</h2>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse border border-gray-200">
                 <thead>
