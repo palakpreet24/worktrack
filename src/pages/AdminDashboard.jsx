@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Sidebar from "../compnents/Sidebar";
-import UserHeader from "../compnents/UserHeader"; // Ensure this component is imported correctly
+import Header from "../compnents/Header";
 
 const AdminDashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
